@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "TTFirs-Black";
+  src: url("/ttfirs-black.woff2") format("woff2"),url("/ttfirs-black.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap
+}
+
+.page {
+  background: url('/images/futuristic-casino-architecture\ 1.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  max-width: 1920px;
+  min-width: 320px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  width: 48%;
+  height: 10%;
+  margin: 45px auto;
+
+}
+/*width: 789px;
+height: 164px;*/
+.title__text {
+  background: linear-gradient(0deg, #FFEE58 30%, #FFC330 60%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    font-family: 'TTFirs-Black', Helvetica, sans-serif;
+}
+
+.girl {
+  z-index: -2;
+  width: 40%;
+  height: 84%;
+  position: absolute;
+  bottom: 0%;
+  left: 33%;
+  transform: translateX(-50%);
+}
+
+.circle {
+  position: absolute;
+  max-width: 42%;
+  max-height: 69%;
+  transform: translateX(-50%);
+  left: 55%;
+  top: 28%;
+}
+
+.wheel {
+  position: absolute;
+  transform: translateX(-50%);
+  max-width: 40%;
+  max-height: 68%;
+  left: 55%;
+  top: 29%;
+  z-index: -1;
+  /*animation: 2s spinner ease-in-out infinite*/
+}
+
+/*@keyframes spinner {
+    0% {
+        transform: rotate(-47deg)
+    }
+
+    50% {
+        transform: rotate(-39deg)
+    }
+
+    100% {
+        transform: rotate(-47deg)
+    }
+}*/
+
+.button {
+  position: absolute;
+  max-width: 15%;
+  max-height: 15%;
+  transform: translateX(-50%);
+  left: 55.4%;
+  top: 55%;
+  z-index: 2;
+}
+
+.arrow {
+  position: absolute;
+  max-width: 3%;
+  max-height: 10%;
+  transform: translateX(-50%);
+  left: 55.4%;
+  top: 33.5%;
+  z-index: 1;
+}
+
+.fire {
+  position: absolute;
+  max-width: 95%;
+  max-height: 80%;
+  transform: translateX(-50%);
+  z-index: -4;
+  left: 48%;
+  bottom: 0;
+  opacity: 0.7;
+}
+
+.burning {
+  position: absolute;
+  max-width: 45%;
+  max-height: 75%;
+  transform: translateX(-50%);
+  z-index: 2;
+  left: 62%;
+  bottom: 2%;
+}
+
+.rectangle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -3;
+}
+
