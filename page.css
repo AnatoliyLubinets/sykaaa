@@ -48,6 +48,7 @@ height: 164px;*/
   bottom: 0%;
   left: 33%;
   transform: translateX(-50%);
+
 }
 
 .circle {
@@ -59,18 +60,29 @@ height: 164px;*/
   top: 28%;
 }
 
-.wheel {
+.wheel__container {
   position: absolute;
-  transform: translateX(-50%);
   max-width: 40%;
   max-height: 68%;
-  left: 55%;
+  left: 38%;
   top: 29%;
+  overflow: hidden;
   z-index: -1;
-  /*animation: 2s spinner ease-in-out infinite*/
 }
 
-/*@keyframes spinner {
+.wheel {
+  overflow: hidden;
+
+  transform: translateX(-50%);
+  width: 650px;
+  height: 650px;
+  left: 55%;
+  top: 29%;
+  animation: 2s spinner ease-in-out infinite;
+
+}
+
+@keyframes spinner {
     0% {
         transform: rotate(-47deg)
     }
@@ -82,7 +94,7 @@ height: 164px;*/
     100% {
         transform: rotate(-47deg)
     }
-}*/
+}
 
 .button {
   position: absolute;
@@ -136,3 +148,41 @@ height: 164px;*/
   z-index: -3;
 }
 
+.cubeone {
+  position: absolute;
+  width: 207px;
+  height: 221px;
+  top: 169px;
+  left: 28px;
+  animation-name: rotation;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cubetwo {
+  position: absolute;
+  width: 174.61px;
+  height: 190.42px;
+  bottom: 0;
+  left: 1609px;
+
+}
+
+.cubethree {
+  position: absolute;
+  width: 257px;
+  height: 279px;
+  top: 20px;
+  right: 0;
+}
+
+
+@keyframes rotation {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
