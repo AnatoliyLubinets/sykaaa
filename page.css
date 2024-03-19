@@ -26,10 +26,8 @@
   width: 48%;
   height: 10%;
   margin: 45px auto;
-
 }
-/*width: 789px;
-height: 164px;*/
+
 .title__text {
   background: linear-gradient(0deg, #FFEE58 30%, #FFC330 60%);
     background-clip: text;
@@ -42,44 +40,68 @@ height: 164px;*/
 
 .girl {
   z-index: -2;
-  width: 40%;
+  min-width: 40%;
   height: 84%;
   position: absolute;
   bottom: 0%;
   left: 33%;
   transform: translateX(-50%);
+}
 
+@media screen and (max-width: 1280px) {
+  .girl {
+    height: 79%;
+  }
 }
 
 .circle {
   position: absolute;
-  max-width: 42%;
-  max-height: 69%;
-  transform: translateX(-50%);
-  left: 55%;
-  top: 28%;
+  max-width: 100%;
+  max-height: 100%;
+  left: 0;
+  top: 0;
+  margin: auto;
 }
 
 .wheel__container {
-  position: absolute;
-  max-width: 40%;
-  max-height: 68%;
-  left: 38%;
-  top: 29%;
+  position: relative;
+  width: 41.4%;
+  height: 680px;
+  left: 37.3%;
+  top: 9%;
   overflow: hidden;
   z-index: -1;
 }
 
+@media screen and (max-width: 1366px) {
+  .wheel__container {
+    top: 13%;
+    height: 640px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wheel__container {
+    top: 18%;
+    height: 598px;
+  }
+}
+
+
 .wheel {
   overflow: hidden;
-
-  transform: translateX(-50%);
-  width: 650px;
-  height: 650px;
-  left: 55%;
-  top: 29%;
+  position: absolute;
+  max-width: 100%;
+  max-height: 100%;
+  left: 1%;
+  top: 1%;
+  z-index: -1;
   animation: 2s spinner ease-in-out infinite;
+}
 
+.rotating {
+  transition: all 10s;
+  transition-timing-function: ease-in-out;
 }
 
 @keyframes spinner {
@@ -106,19 +128,81 @@ height: 164px;*/
   z-index: 2;
 }
 
+.spin-button {
+  border-radius: 50%;
+  background-image: url(./images/Group\ 5\ 1.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  /*width: 22%;
+  height: 25%;*/
+  width: 150px;
+  height: 150px;
+  left: 35%;
+  top: 39%;
+  z-index: 6;
+  cursor: pointer;
+}
+
 .arrow {
   position: absolute;
-  max-width: 3%;
-  max-height: 10%;
-  transform: translateX(-50%);
-  left: 55.4%;
-  top: 33.5%;
+  max-width: 12%;
+  max-height: 12%;
+  left: 40.4%;
+  top: 8%;
   z-index: 1;
+}
+@media screen and (max-width: 1669px) {
+  .spin-button {
+    left: 40%;
+    top: 41%;
+  }
+}
+
+@media screen and (max-width: 1584px) {
+  .spin-button {
+    top: 38%;
+  }
+}
+@media screen and (max-width: 1469px) {
+  .spin-button {
+    top: 35%;
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .spin-button {
+    top: 34%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .spin-button {
+    width: 130px;
+    height: 130px;
+    top: 34%;
+  }
+}
+
+@media screen and (max-width: 1669px) {
+  .arrow {
+    left: 46%;
+  }
+}
+
+@media screen and (max-width: 1469px) {
+  .arrow {
+    top: 7%;
+  }
 }
 
 .fire {
   position: absolute;
-  max-width: 95%;
+  width: 95%;
   max-height: 80%;
   transform: translateX(-50%);
   z-index: -4;
@@ -129,12 +213,33 @@ height: 164px;*/
 
 .burning {
   position: absolute;
-  max-width: 45%;
-  max-height: 75%;
+  width: 100%;
+  height: 100%;
   transform: translateX(-50%);
   z-index: 2;
-  left: 62%;
-  bottom: 2%;
+  left: 57%;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1669px) {
+  .burning {
+    left: 65%;
+  }
+}
+
+@media screen and (max-width: 1469px) {
+  .burning {
+    bottom: 6%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .burning {
+    left: 65%;
+    width: 90%;
+    height: 90%;
+    bottom: 7%;
+  }
 }
 
 .rectangle {
@@ -148,33 +253,118 @@ height: 164px;*/
   z-index: -3;
 }
 
-.cubeone {
+.dusk {
   position: absolute;
-  width: 207px;
-  height: 221px;
-  top: 169px;
-  left: 28px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -3;
+}
+
+.cubeone {
+  width: 100%;
+  height: 100%;
   animation-name: rotation;
-  animation-duration: 40s;
+  animation-duration: 100s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-.cubetwo {
+.cubeone__container {
+  overflow: hidden;
   position: absolute;
-  width: 174.61px;
-  height: 190.42px;
-  bottom: 0;
-  left: 1609px;
+  width: 11%;
+  height: 21%;
+  top: 14%;
+  left: 3%;
+}
 
+@media screen and (max-width: 1280px) {
+  .cubeone__container {
+    width: 9%;
+  height: 17%;
+  }
+}
+
+.cubetwo {
+  width: 100%;
+  height: 100%;
+  animation-name: rotation;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cubetwo__container {
+  overflow: hidden;
+  position: absolute;
+  width: 9%;
+  height: 16%;
+  bottom: 0;
+  left: 85%;
+}
+
+@media screen and (max-width: 1280px) {
+  .cubeone__container {
+    width: 8%;
+    height: 14%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .cubetwo__container {
+  width: 8%;
+  height: 14%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .cubetwo__container {
+  width: 6.7%;
+  height: 12.7%;
+  }
 }
 
 .cubethree {
+  width: 100%;
+  height: 100%;
+  animation-name: rotation;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.cubethree__container {
+  overflow: hidden;
   position: absolute;
-  width: 257px;
-  height: 279px;
-  top: 20px;
+  width: 13%;
+  height: 29%;
+  top: 4%;
   right: 0;
+}
+
+@media screen and (max-width: 1669px) {
+  .cubethree__container {
+    width: 12%;
+    height: 23%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .cubethree__container {
+    width: 10%;
+    height: 19%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .cubethree__container {
+    width: 8%;
+    height: 14%;
+  }
 }
 
 
@@ -186,3 +376,201 @@ height: 164px;*/
         transform:rotate(360deg);
     }
 }
+
+.popup {
+  display: flex;
+  visibility: visible;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.2s linear;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0,0,0,0.9);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.popup_opened {
+  visibility: hidden;
+  opacity: 1;
+  z-index: 2;
+}
+
+.popup__container {
+  position: relative;
+  box-sizing: border-box;
+  border: solid 10px#FFB800;
+  width: 28.5%;
+  height: 800px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  background: url(./images/—Pngtree—spark\ border\ flame\ burning_8628868\ 2.png);
+  background-size: cover;
+  z-index: -4;
+}
+
+.popup__submit-button {
+  font-family: 'TTTFirs-ExtraBold', Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39.9px;
+  text-align: center;
+  width: 73%;
+  height: 9%;
+  transition: 0.5s;
+  border-style: none;
+  border-radius: 2px;
+  /*background-color: #830764;*/
+  background: linear-gradient(0deg, #85069E 20%, #ED8BFF 100%);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 5%;
+}
+
+.popup-arrow {
+  position: absolute;
+  height: 8%;
+  width: 8%;
+  top: 33%;
+  z-index: 2;
+  visibility: hidden;
+}
+
+
+/*.popup-image {
+  height: 100%;
+  width: 100%;
+}*/
+
+.popup-circle {
+  position: absolute;
+  height: 50%;
+  width: 50;
+  top: 32%;
+  z-index: 1;
+  visibility: hidden;
+}
+
+.popup-wheel {
+  position: absolute;
+  height: 58%;
+  z-index: -1;
+  top: 28%;
+  visibility: hidden;
+}
+
+.firework {
+  position: absolute;
+  left: -60%;
+  top: 20%;
+  z-index: -3;
+  height: 80%;
+  width: 110%;
+}
+
+.fireworkk {
+  position: absolute;
+  right: -33%;
+  top: 12%;
+  z-index: -3;
+  width: 80%;
+  height: 50%;
+  opacity: 0.8;
+}
+
+.result {
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  z-index: 5;
+}
+
+.popup-title {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.popup-title-text {
+    background: linear-gradient(0deg, #85069E 20%, #ED8BFF 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 30px;
+    font-family: 'TTFirs-ExtraBold', Helvetica, sans-serif;
+    margin: 0;
+}
+
+.popup-text {
+  background: white;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: 'TTFirs-ExtraBold', Helvetica, sans-serif;
+}
+
+.popup-cubeone {
+  width: 20%;
+  height: 20%;
+  left: 0;
+  animation-name: rotation;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  width: 30%;
+  height: 21%;
+  top: 0%;
+  left: -19%;
+}
+
+
+.popup-cubetwo {
+  width: 100%;
+  height: 100%;
+  animation-name: rotation;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  width: 22%;
+  height: 16%;
+  bottom: -8%;
+  right: -10%;
+}
+
+
+.popup-cubethree {
+  width: 100%;
+  height: 100%;
+  animation-name: rotation;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  position: absolute;
+  width: 30%;
+  height: 21%;
+  top: 0;
+  right: -55%;
+}
+
+.popup-girl {
+  z-index: -2;
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  visibility: hidden;
+}
+
