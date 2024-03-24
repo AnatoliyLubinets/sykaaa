@@ -689,7 +689,7 @@
 }
 
 .popup_opened {
-  visibility: hidden;
+  visibility: visible;
   opacity: 1;
   z-index: 2;
 }
@@ -709,6 +709,61 @@
   background: url(./images/—Pngtree—spark\ border\ flame\ burning_8628868\ 2.png);
   background-size: cover;
   z-index: -4;
+}
+
+@media screen and (max-width: 1590px) {
+  .popup__container {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .popup__container {
+    width: 33%;
+  }
+}
+
+
+@media screen and (max-width: 1312px) {
+  .popup__container {
+    width: 37%;
+  }
+}
+
+@media screen and (max-width: 1312px) {
+  .popup__container {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1148px) {
+  .popup__container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .popup__container {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .popup__container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .popup__container {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .popup__container {
+    width: 100%;
+  }
 }
 
 .popup__submit-button {
@@ -736,7 +791,7 @@
   width: 8%;
   top: 33%;
   z-index: 2;
-  visibility: hidden;
+  visibility: visible;
 }
 
 
@@ -751,7 +806,14 @@
   width: 50;
   top: 32%;
   z-index: 1;
-  visibility: hidden;
+  visibility: visible;
+}
+
+@media screen and (max-width: 430px) {
+  .popup-circle {
+    width: 100%;
+    height: 47%;
+  }
 }
 
 .popup-wheel {
@@ -759,7 +821,13 @@
   height: 58%;
   z-index: -1;
   top: 28%;
-  visibility: hidden;
+  visibility: visible;
+}
+
+@media screen and (max-width: 430px) {
+  .popup-wheel {
+    width: 120%;
+  }
 }
 
 .firework {
