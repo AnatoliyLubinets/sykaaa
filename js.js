@@ -15,6 +15,7 @@ let winList = ['win1', 'win2', 'win3'];
 
 function wheelSpin() {
   if (gifts.length == 0) {
+    spinBtn.disabled = true;
     const item = winList[Math.floor(Math.random()*winList.length)];
     wheel.classList.add('wheel-spinner-' + item);
     gifts.push(item);

@@ -231,7 +231,7 @@
 
 .wheel-spinner-win2  {
   animation: 5s spin2 ease-in-out 1;
-  transform: rotate(-45deg);
+  transform: rotate(-0deg);
 }
 
 @keyframes spin2 {
@@ -243,7 +243,7 @@
 
 .wheel-spinner-win3  {
   animation: 5s spin3 ease-in-out 1;
-  transform: rotate(-120deg);
+  transform: rotate(-310deg);
 }
 
 @keyframes spin3 {
