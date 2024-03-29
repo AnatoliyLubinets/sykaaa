@@ -11,7 +11,31 @@ const popupTitleText = document.querySelector('.popup-title-sub');
 const popupTextSub = document.querySelector('.popup-text-sub');
 const gifts = [];
 let winList = ['win1', 'win2', 'win3'];
+const savedWin1 = localStorage.getItem('win1');
+const savedWin2 = localStorage.getItem('win2');
 
+function showFinalPopup() {
+    popupTitleText.textContent = gifts.map(row => giftsTexts[row]).join(' + ');
+    popupTextSub.textContent = ' ';
+    popupBtn.textContent = 'ЗАБРАТЬ ПРИЗ'
+    popupWheel.classList.add('popup-wheel-hidden')
+    popupGircle.classList.add('popup-circle-hidden')
+    popupArrow.classList.add('popup-arrow-hidden')
+    popupGirl.classList.add('popup-girl-visible')
+    popup.classList.add('popup_opened')
+}
+
+if (savedWin1) {
+  gifts.push(savedWin1);
+}
+
+if (savedWin2) {
+  gifts.push(savedWin2);
+}
+
+if (gifts.length == 2) {
+  showFinalPopup()
+}
 
 function wheelSpin() {
   if (gifts.length == 0) {
@@ -19,6 +43,7 @@ function wheelSpin() {
     const item = winList[Math.floor(Math.random()*winList.length)];
     wheel.classList.add('wheel-spinner-' + item);
     gifts.push(item);
+    localStorage.setItem('win1', item);
     winList = winList.filter((row) => row != item)
     setTimeout(() => {
       popupTitleText.textContent = giftsTexts[item];
@@ -34,18 +59,15 @@ function spinAgain() {
     const item = winList[Math.floor(Math.random()*winList.length)];
     wheel.classList.add('wheel-spinner-' + item);
     gifts.push(item);
+    localStorage.setItem('win2', item);
     setTimeout(() => {
-      popupTitleText.textContent = popupTitleText.textContent + ' + ' + giftsTexts[item];
-      popupTextSub.textContent = ' ';
-      popupBtn.textContent = 'ЗАБРАТЬ ПРИЗ'
-      popupWheel.classList.add('popup-wheel-hidden')
-      popupGircle.classList.add('popup-circle-hidden')
-      popupArrow.classList.add('popup-arrow-hidden')
-      popupGirl.classList.add('popup-girl-visible')
-      popup.classList.add('popup_opened')
+      showFinalPopup()
     },5000)
   } else if (gifts.length == 2) {
-    window.location.reload()
+    const urlParams = new URLSearchParams(window.location.search);
+    const source = urlParams.get('source') || 'sykaaa45.com';
+    const link = 'https://' + source + '/ru/register?g1=' + gifts[0] + '&g2=' + gifts[1];
+    window.location.href = link;
   }
 }
 
