@@ -101,15 +101,15 @@
   .girl {
     width: 475px;
     left: 45%;
-    height: 75%;
+    height: 60%;
   }
 }
 
 @media screen and (max-width: 391px) {
   .girl {
-    width: 430px;
+    width: 440px;
     left: 45%;
-    height: 75%;
+    height: 60%;
   }
 }
 
@@ -181,12 +181,14 @@
 @media screen and (max-width: 391px) {
   .wheel__container {
     height: 350px;
+    top: 47.3%;
   }
 }
 
 @media screen and (max-width: 361px) {
   .wheel__container {
     height: 337px;
+
   }
 }
 
@@ -269,6 +271,13 @@
   z-index: 100;
   cursor: pointer;
   border: none;
+}
+
+@media screen and (max-width: 1701px) {
+  .spin-button {
+    left: 40%;
+    top: 39%;
+  }
 }
 
 @media screen and (max-width: 1669px) {
@@ -376,6 +385,12 @@
   left: 40.4%;
   top: 8%;
   z-index: 1;
+}
+
+@media screen and (max-width: 1701px) {
+  .arrow {
+    left: 45%;
+  }
 }
 
 
