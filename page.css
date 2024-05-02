@@ -113,11 +113,19 @@
   }
 }
 
+@media screen and (max-width: 375px) {
+  .girl {
+    width: 375px;
+    left: 45%;
+    height: 60%;
+  }
+}
+
 @media screen and (max-width: 361px) {
   .girl {
     width: 396px;
     left: 45%;
-    height: 75%;
+    height: 60%;
   }
 }
 
@@ -169,9 +177,19 @@
   }
 }
 
+
 @media screen and (max-width: 431px) {
   .wheel__container {
-    top: 47.3%;
+    top: 48.3%;
+    height: 400px;
+    width: 80%;
+    left: 7%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .wheel__container {
+    top: 48.3%;
     height: 400px;
     width: 80%;
     left: 7%;
@@ -188,7 +206,7 @@
 @media screen and (max-width: 361px) {
   .wheel__container {
     height: 337px;
-
+    top: 50%;
   }
 }
 
@@ -403,6 +421,19 @@
 @media screen and (max-width: 1469px) {
   .arrow {
     top: 7%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .arrow {
+   left: 44.2%;
+   top: 7.5%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .arrow {
+   left: 47%;
   }
 }
 
@@ -798,7 +829,7 @@
 
 @media screen and (max-width: 430px) {
   .popup__container {
-    width: 100%;
+    width: 95%;
   }
 }
 
