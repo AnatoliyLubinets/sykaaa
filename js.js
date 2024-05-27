@@ -65,7 +65,7 @@ function spinAgain() {
     },5000)
   } else if (gifts.length == 2) {
     const urlParams = new URLSearchParams(window.location.search);
-    const source = urlParams.get('source') || 'sykaaa45.com';
+    const source = urlParams.get('source') || 'sykaaabi.com';
     const link = 'https://' + source + '/ru/register?g1=' + gifts[0] + '&g2=' + gifts[1];
     window.location.href = link;
   }
