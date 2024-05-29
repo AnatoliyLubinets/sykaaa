@@ -18,9 +18,9 @@ function showFinalPopup() {
     popupTitleText.textContent = gifts.map(row => giftsTexts[row]).join(' + ');
     popupTextSub.textContent = ' ';
     popupBtn.textContent = 'ЗАБРАТЬ ПРИЗ'
-    popupWheel.classList.add('popup-wheel-hidden')
-    popupGircle.classList.add('popup-circle-hidden')
-    popupArrow.classList.add('popup-arrow-hidden')
+    //popupWheel.classList.add('popup-wheel-hidden')
+    //popupGircle.classList.add('popup-circle-hidden')
+    //popupArrow.classList.add('popup-arrow-hidden')
     popupGirl.classList.add('popup-girl-visible')
     popup.classList.add('popup_opened')
 }

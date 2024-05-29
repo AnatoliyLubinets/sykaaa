@@ -30,6 +30,17 @@
   }
 }
 
+.dusk {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -3;
+}
+
 .title {
   text-align: center;
   width: 48%;
@@ -1001,7 +1012,9 @@
   /*border-radius: 10px;*/
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
   align-items: center;
-  background: url(./images/Pngtreespark\ border\ flame\ burning_8628868\ 2.png);
+  /*background: url(./images/Pngtreespark\ border\ flame\ burning_8628868\ 2.png);*/
+  background: url(./images/bg_pattern5p.png);
+  background-color: #211c25;
   background-size: cover;
   z-index: -4;
 }
@@ -1049,17 +1062,39 @@
   color: rgb(255, 255, 255);
   position: absolute;
   bottom: 5%;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1280px) {
   .popup__submit-button {
-    width: 32%;
+    margin-left: 530px;
+    width: 40%;
+    bottom: 12%;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .popup__submit-button {
     width: 53%;
+    margin: auto;
+    font-size: 35px;
+    bottom: 7%;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .popup__submit-button {
+    width: 58%;
+    font-size: 35px;
+    bottom: 9%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .popup__submit-button {
+    font-size: 28px;
+    margin: auto;
   }
 }
 
@@ -1067,6 +1102,29 @@
   .popup__submit-button {
     height: 10%;
     width: 75%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .popup__submit-button {
+    font-size: 25px;
+  }
+}
+
+
+@media screen and (max-width: 280px) {
+  .popup__submit-button {
+    font-size: 19px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .popup__submit-button {
+    margin-left: 395px;
+    width: 40%;
+    bottom: 12%;
   }
 }
 
@@ -1079,10 +1137,25 @@
   visibility: visible;
 }
 
+
 @media screen and (max-width: 1280px) {
   .popup-arrow {
     height: 7%;
     width: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .popup-arrow {
+    height: 7%;
+    width: 6%;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .popup-arrow {
+    height: 7%;
+    width: 7%;
   }
 }
 
@@ -1114,6 +1187,13 @@
   }
 }
 
+@media screen and (max-height: 600px) {
+  .popup-arrow {
+    height: 7%;
+    width: 3%;
+  }
+}
+
 .popup-arrow-hidden {
   visibility: hidden;
 }
@@ -1140,7 +1220,33 @@
 @media screen and (max-width: 430px) {
   .popup-circle {
     width: 100%;
+    height: 45%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .popup-circle {
+    height: 45%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .popup-circle {
+    height: 43%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .popup-circle {
+    width: 88%;
     height: 47%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .popup-circle {
+    height: 38%;
+
   }
 }
 
@@ -1159,6 +1265,27 @@
 @media screen and (max-width: 430px) {
   .popup-wheel {
     width: 120%;
+    height: 55%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .popup-wheel {
+    width: 120%;
+    height: 53%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .popup-wheel {
+    width: 114%;
+    height: 54%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .popup-wheel {
+    height: 47%;
   }
 }
 
@@ -1176,14 +1303,167 @@
     line-height: 30px;
     font-family: 'TTFirs-ExtraBold', Helvetica, sans-serif;
     margin: 0;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+  .popup-title-text {
+    margin-top: 50px;
+    margin-left: 500px;
+    font-size: 55px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .popup-title-text {
+    font-size: 65px;
+    line-height: 50px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .popup-title-text {
+    font-size: 60px;
+    line-height: 50px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup-title-text {
+    font-size: 55px;
+    line-height: 48px;
+    margin: auto;
+  }
+}
+
+
+
+@media screen and (max-width: 540px) {
+  .popup-title-text {
+    font-size: 40px;
+    line-height: 40px;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 430px) {
   .popup-title-text {
-    font-size: 29px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 35px;
+    margin: auto;
   }
 }
+
+@media screen and (max-width: 375px) {
+  .popup-title-text {
+    font-size: 29px;
+    line-height: 25px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .popup-title-text {
+    font-size: 25px;
+    line-height: 30px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .popup-title-text {
+    margin-left: 350px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+
+.popup-title-sub {
+  background: linear-gradient(0deg, #85069E 20%, #ED8BFF 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 30px;
+  font-family: 'TTFirs-ExtraBold', Helvetica, sans-serif;
+  margin: 0;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1280px) {
+  .popup-title-sub {
+    margin-left: 500px;
+    font-size: 55px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .popup-title-sub {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 912px) {
+  .popup-title-sub {
+    font-size: 60px;
+    line-height: 50px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup-title-sub {
+    font-size: 55px;
+    line-height: 48px;
+    margin: auto;
+  }
+}
+
+
+@media screen and (max-width: 540px) {
+  .popup-title-sub {
+    font-size: 40px;
+    line-height: 40px;
+    margin: auto;
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+  .popup-title-sub {
+    font-size: 35px;
+    line-height: 35px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .popup-title-sub {
+    font-size: 29px;
+    line-height: 30px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .popup-title-sub {
+    font-size: 25px;
+    line-height: 30px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .popup-title-sub {
+    margin-left: 350px;
+    font-size: 45px;
+  }
+}
+
 
 .popup-text {
   background: white;
@@ -1191,93 +1471,224 @@
     -webkit-text-fill-color: transparent;
     font-size: 25px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 35px;
     font-family: 'TTFirs-ExtraBold', Helvetica, sans-serif;
     margin: auto;
-    padding: 15px;
+}
+
+@media screen and (max-width: 1280px) {
+  .popup-text {
+    margin-left: 500px;
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .popup-text {
+    font-size: 40px;
+    line-height: 50px;
+    margin: auto;
+  }
 }
 
 
+@media screen and (max-width: 912px) {
+  .popup-text {
+    font-size: 50px;
+    line-height: 55px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 853px) {
+  .popup-text {
+    font-size: 40px;
+    line-height: 55px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .popup-text {
+    font-size: 38px;
+    line-height: 38px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .popup-text {
+    font-size: 25px;
+    line-height: 30px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .popup-text {
+    font-size: 27px;
+    line-height: 31px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .popup-text {
+    font-size: 31px;
+    line-height: 33px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .popup-text {
+    font-size: 25px;
+    line-height: 32px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .popup-text {
+    font-size: 25px;
+    line-height: 30px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .popup-text {
+    font-size: 20px;
+    line-height: 25px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .popup-text {
+    margin-left: 350px;
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
 .popup-girl {
   z-index: -2;
-  width: 100%;
+  width: 115%;
   height: 75%;
   position: absolute;
   bottom: 0%;
   right: 0;
-  visibility: hidden;
+  visibility: visible;
 }
 
 @media screen and (max-width: 1280px) {
   .popup-girl {
-    width: 45%;
-    height: 70%;
-    margin-right: 365px;
+    width: 60%;
+    height: 100%;
+    right: 50%;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .popup-girl {
-    width: 91%;
-    height: 70%;
-    margin-right: 40px;
+    width: 100%;
+    height: 79%;
+    right: 0;
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 912px) {
   .popup-girl {
-    width: 90%;
-    height: 70%;
-    margin-right: 50px;
+    width: 110%;
+    height: 80%;
   }
 }
+
+
+@media screen and (max-width: 821px) {
+  .popup-girl {
+    width: 110%;
+    height: 70%;
+
+  }
+}
+
+@media screen and (max-width: 853px) {
+  .popup-girl {
+    width: 105%;
+    height: 75%;
+
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .popup-girl {
+    width: 103%;
+    height: 80%;
+
+  }
+}
+
 
 @media screen and (max-width: 540px) {
   .popup-girl {
-    margin-right: 30px;
+    height: 75%;
   }
 }
 
 @media screen and (max-width: 430px) {
   .popup-girl {
-    width: 100%;
-    height: 58%;
-    margin-right: 0px;
+    width: 133%;
+    height: 68%;
+
   }
 }
 
-@media screen and (max-width: 414px) {
-  .popup-girl {
-    width: 100%;
-    height: 60%;
-  }
-}
 
 @media screen and (max-width: 414px) {
   .popup-girl {
-    width: 100%;
-    height: 59%;
+    width: 135%;
+    height: 69%;
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .popup-girl {
+    width: 137%;
+    height: 69%;
   }
 }
 
 @media screen and (max-width: 375px) {
   .popup-girl {
-    width: 100%;
+    width: 115%;
     height: 70%;
   }
 }
 
 @media screen and (max-width: 360px) {
   .popup-girl {
-    width: 100%;
+    width: 120%;
     height: 68%;
   }
 }
 
 @media screen and (max-width: 280px) {
   .popup-girl {
-    width: 115%;
-    height: 58%;
+    width: 150%;
+    height: 68%;
+    right: -10%;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .popup-girl {
+    width: 60%;
+    height: 100%;
+    right: 50%;
   }
 }
 
